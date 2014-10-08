@@ -1,0 +1,18 @@
+{
+  "author": "Jeff Picklyk",
+  "dependencies": [],
+  "license": "",
+  "name": "jpicklyk-custom_facts",
+  "operatingsystem_support": [],
+  "project_page": "",
+  "requirements": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">=1.0.0"
+    }
+  ],
+  "source": "",
+  "summary": "",
+  "tags": [],
+  "version": "0.1.0"
+}
