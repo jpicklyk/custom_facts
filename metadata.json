@@ -1,18 +1,18 @@
 {
-  "author": "Jeff Picklyk",
-  "dependencies": [],
-  "license": "",
+  "author": "Jeff Picklyk",  
+  "license": "Apache License, Version 2.0",
   "name": "jpicklyk-custom_facts",
   "operatingsystem_support": [],
-  "project_page": "",
-  "requirements": [
+  "project_page": "https://github.com/jpicklyk/custom_facts",
+  "requirements": [],
+  "dependencies": [
     {
-      "name": "puppetlabs-stdlib",
+      "name": "puppetlabs/stdlib",
       "version_requirement": ">=1.0.0"
     }
   ],
-  "source": "",
-  "summary": "",
+  "source": "https://github.com/jpicklyk/custom_facts.git",
+  "summary": "Custom fact repo for puppet",
   "tags": [],
   "version": "0.1.0"
 }
