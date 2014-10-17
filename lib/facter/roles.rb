@@ -15,19 +15,19 @@ if Facter.value(:hostname) == "puppetmaster"
 elsif Facter.value(:hostname) =~ /^([a-z]+)[0-9]+\-([a-z0-9]{5})$/i
   Facter.add('puppet_role') do
     setcode do
-      $1.downcase
+      downcase($1)
     end
   end
   Facter.add('puppet_lab') do
     setcode do
-      $2.downcase
+      downcase($2)
     end
   end
 # ^([a-z]+)[0-9]*$, i.e. dc or dc01 have a puppet_role of dc and belong to the default lab
 elsif Facter.value(:hostname) =~ /^([a-z]+)[0-9]*$/i
   Facter.add('puppet_role') do
     setcode do
-      $1.downcase
+      downcase($1)
     end
   end
   Facter.add('puppet_lab') do
