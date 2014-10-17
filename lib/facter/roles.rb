@@ -12,7 +12,7 @@ if Facter.value(:hostname) == "puppetmaster"
   end
 
 # ^([a-z]+)[0-9]+\-([a-z0-9]{5})$, i.e. dc01-lab45 would have a role of dc and be a part of lab lab45
-elsif Facter.value(:hostname) =~ /^([a-z]+)[0-9]+\-([a-z0-9]{5})$/i
+elsif Facter.value(:hostname) =~ /^([a-z]+)[0-9]*\-([a-z0-9]+)$/i
   Facter.add('puppet_role') do
     setcode do
       downcase($1)
