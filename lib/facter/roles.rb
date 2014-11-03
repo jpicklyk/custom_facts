@@ -4,7 +4,7 @@
 #  See https://gist.github.com/jrottenberg/5872127 for more complicated examples
 #  using fqdn.
 
-if Facter.value(:hostname) == "puppetmaster"
+if Facter.value(:hostname) == "puppetmaster" or Facter.value(:hostname) == "puppet"
   Facter.add('puppet_role') do
     setcode do
       'puppet'
